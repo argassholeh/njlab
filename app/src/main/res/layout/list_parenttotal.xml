@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/kotak">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3.3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_parentnamabarang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Komputer"
+                    android:textSize="12.5sp"
+                    android:textColor="@color/black_trasnparent"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_parenttotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="0"
+                    android:textSize="12.5sp"
+                    android:textColor="@color/black_trasnparent"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:textSize="12.5sp"
+                    android:textColor="@color/black_trasnparent"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_parenttotalbaik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:textSize="12.5sp"
+                    android:text="0"
+                    android:textColor="@color/black_trasnparent"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak Normal"
+                    android:textSize="12.5sp"
+                    android:textColor="@color/black_trasnparent"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_parenttotalrusak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:textSize="12.5sp"
+                    android:text="0"
+                    android:textColor="@color/black_trasnparent"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgpanah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_keyboard_arrow_down_grey_24dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green_semi_transparent"/>
+
+    <ImageButton
+        android:id="@+id/expandArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_transparant2"
+        android:src="@drawable/ic_arrow_drop_down"
+        android:visibility="gone" />
+    <!--</LinearLayout>-->
+
+
+
+
+    </LinearLayout>
+
+<!--</android.support.v7.widget.CardView>-->

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    tools:context=".Keluhan">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="@drawable/recttoolbar"
+        app:titleTextColor="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <EditText
+                            android:visibility="gone"
+                            android:enabled="false"
+                            android:padding="10dp"
+                            android:inputType="textAutoCorrect"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:id="@+id/ediduser"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/round_spinner"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Lab"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:layout_marginBottom="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_spinner">
+                            <Spinner
+                                android:id="@+id/spinlabk"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:gravity="center">
+                            </Spinner>
+                        </LinearLayout>
+                        <requestFocus/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Barang"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:layout_marginBottom="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_spinner">
+                            <Spinner
+                                android:id="@+id/spinbarangk"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:gravity="center">
+                            </Spinner>
+                        </LinearLayout>
+                        <requestFocus/>
+
+                        <EditText
+                            android:visibility="gone"
+                            android:enabled="false"
+                            android:hint="admin"
+                            android:padding="10dp"
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:id="@+id/edAdmink"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/round_spinner"/>
+                        <requestFocus/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:drawableRight="@android:drawable/ic_menu_gallery"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Foto Kerusakan"
+                            android:id="@+id/btnfotokerusakan" />
+
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/img_fotokerusakan"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:src="@drawable/no_image" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_keluhan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keluhan"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+                    <EditText
+                        android:inputType="text|textMultiLine"
+                        android:hint="Optional"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edkeluhanBarang"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btnsimpankeluhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rect1_2"
+                    android:padding="15dp"
+                    android:text="Laporkan"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btnsimpancomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rect1_2"
+                    android:padding="15dp"
+                    android:text="Laporkan"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btnsimpanperbaikan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rect1_2"
+                    android:padding="15dp"
+                    android:text="Laporkan"
+                    android:textColor="@color/white" />
+
+
+                <requestFocus/>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

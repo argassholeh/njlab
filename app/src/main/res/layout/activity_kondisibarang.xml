@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    tools:context=".KondisiBarang">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="@drawable/recttoolbar"
+        app:titleTextColor="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Lab"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/round_spinner">
+                        <Spinner
+                            android:id="@+id/spin_jenisLabK"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:gravity="center">
+                        </Spinner>
+                    </LinearLayout>
+                    <requestFocus/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Barang"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/round_spinner">
+                        <Spinner
+                            android:id="@+id/spin_namabarangk"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:gravity="center">
+                        </Spinner>
+                    </LinearLayout>
+                    <requestFocus/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioGroup
+                            android:id="@+id/rg_statuskondisi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:id="@+id/rb_baik"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Baik" />
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:id="@+id/rb_rusak"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rusak"/>
+                            <RadioButton
+                                android:visibility="gone"
+                                android:layout_weight="1"
+                                android:id="@+id/rb_Pilih"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pilih"/>
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+
+
+
+                    <EditText
+                        android:visibility="gone"
+                        android:enabled="false"
+                        android:hint="admin"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/edAdmink"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"/>
+                    <requestFocus/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btnsimpankondisik"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rect1_2"
+                    android:padding="15dp"
+                    android:text="Simpan"
+                    android:textColor="@color/white" />
+                <requestFocus/>
+
+                <Button
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btnhapuskondisik"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rect1_2"
+                    android:padding="15dp"
+                    android:text="Hapus"
+                    android:textColor="@color/white" />
+                <requestFocus/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

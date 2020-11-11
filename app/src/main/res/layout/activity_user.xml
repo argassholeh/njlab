@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:orientation="vertical"
+    tools:context=".User">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="4dp"
+        tools:targetApi="lollipop">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/my_toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID User"
+                        android:hint="nidn / nim"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/edIduser"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"/>
+                    <requestFocus/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/edNamauser"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"/>
+                    <requestFocus/>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:id="@+id/tv_tambahstatus"
+                            android:textAlignment="textEnd"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add"
+                            android:textColor="#000"
+                            android:textSize="10dp"
+                            android:layout_marginBottom="5dp"/>
+                        <Button
+                            android:id="@+id/btntambahstatus"
+                            android:background="@drawable/ic_add_black_24dp"
+                            android:textAlignment="textEnd"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/round_spinner">
+                        <Spinner
+                            android:id="@+id/spin_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:gravity="center">
+                        </Spinner>
+                    </LinearLayout>
+                    <requestFocus/>
+                    <requestFocus/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:inputType="textAutoCorrect"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/edPassworduser"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"/>
+
+               </LinearLayout>
+                <!--//-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/btnsimpanuser"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rect1_2"
+                    android:padding="15dp"
+                    android:text="Simpan"
+                    android:textColor="@color/white" />
+                <requestFocus/>
+
+                <Button
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/btnhapususer"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rect1_2"
+                    android:padding="15dp"
+                    android:text="Hapus"
+                    android:textColor="@color/white" />
+                <requestFocus/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

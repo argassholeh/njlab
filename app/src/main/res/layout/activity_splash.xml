@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:layout_weight="1"
+    tools:context=".Splash">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/transparent"
+        android:scaleType="fitXY"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="110dp"
+        android:id="@+id/imageView"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_unuja" />
+
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/imageView"
+        android:id="@+id/tvmonitoring"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="Monitoring"
+        android:textColor="@color/background"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tvmonitoring"
+        android:id="@+id/tvlab"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Laboratorium Komputer"
+        android:textColor="@color/background"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tJember"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvlab"
+        android:layout_marginTop="10dp"
+        android:text="Fakultas Teknik Universitas Nurul Jadid"
+        android:textColor="@color/background"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tJember"
+        android:layout_marginTop="5dp"
+        android:text="Paiton - Probolinggo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/background"/>
+
+
+
+
+</RelativeLayout>

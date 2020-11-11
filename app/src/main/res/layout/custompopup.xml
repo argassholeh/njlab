@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="315dp"
+    android:background="@drawable/shape"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:background="@drawable/cerclebackground"
+                android:id="@+id/txtclose"
+                android:layout_gravity="end"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:text="X"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:id="@+id/img_userpop"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/iconuser"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_popnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muhammad Solehudin"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_popStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asisten Lab"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_pophp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="082336181538"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/imgTelp"
+                    android:layout_width="100dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_telephone" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/imgPesan"
+                    android:layout_width="60dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_message" />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp">
+
+
+                <ImageView
+                    android:id="@+id/imgWA"
+                    android:layout_width="60dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_wa" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

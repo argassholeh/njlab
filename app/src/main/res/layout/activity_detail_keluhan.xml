@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailKeluhan">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="@drawable/recttoolbar"
+        app:titleTextColor="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp"
+                                    android:layout_gravity="center"
+                                    android:padding="10dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_orang_grey_24dp" />
+
+                                <TextView
+                                    android:text="Id User"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:textSize="12sp" />
+
+                                <TextView
+
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14sp" />
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#B1B1B1"></View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:textSize="12sp"
+                                    android:text="Nama" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14sp" />
+
+                                <requestFocus />
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#B1B1B1"></View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:textSize="12sp"
+                                    android:text="Lab"
+                                    />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14sp" />
+
+                                <requestFocus />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#B1B1B1"></View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:textSize="12sp"
+                                    android:text="Nama Barang" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14sp"  />
+
+                                <requestFocus />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#B1B1B1"></View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:textSize="12sp"
+                                    android:id="@+id/tv_posisibarangg"
+                                    android:text="Posisi Barang" />
+
+                                <TextView
+                                    android:id="@+id/tv_posisibarangdk"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14sp"  />
+
+                                <requestFocus />
+
+                                <View
+                                    android:id="@+id/v_posisibarang"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#B1B1B1"></View>
+
+                                <TextView
+                                    android:id="@+id/tv_keluhann"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:text="Keluhan"
+                                    android:textSize="12sp" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14sp"  />
+
+                                <requestFocus />
+
+                                <View
+                                    android:id="@+id/v_keluhan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#B1B1B1"></View>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:textSize="12sp"
+                                    android:text="Tanggal" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14sp"  />
+
+                                <requestFocus />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#B1B1B1"></View>
+
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <Button
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/btnselesaidk"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/rect1_2"
+                                        android:padding="15dp"
+                                        android:text="SELESAI"
+                                        android:textColor="@color/white" />
+                                    <requestFocus/>
+
+
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!--//-->
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <!--//-->
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
